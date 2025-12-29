@@ -11,10 +11,13 @@ function App() {
 
 function NavBar() {
   return (
-    <nav className="w-full bg-brown-100">
-      <div className="max-w-7xl mx-auto px-8 py-6 flex items-center justify-between">
+    <nav className="w-full bg-brown-100 border-b border-brown-300">
+      <div className="max-w-7xl mx-auto px-8 py-2 flex items-center justify-between">
         {/* Logo */}
-        <div className="text-headline-2 text-brown-600 font-semibold">hh.</div>
+        <div className="logo text-brown-600">
+          hh
+          <span className="text-brand-orange">.</span>
+        </div>
 
         {/* Desktop View */}
         <div className="hidden lg:flex items-center gap-2">
@@ -42,13 +45,13 @@ function HeroSection() {
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-center">
           {/* Left Content */}
           <div className="lg:col-span-1 space-y-6 text-center lg:text-right">
-            <h1 className="text-headline-1 text-brown-600 leading-tight mx-auto lg:mx-0 max-w-md">
+            <h1 className=" text-[2.25rem] sm:text-[2.75rem] lg:text-headline-1 font-semibold text-brown-600 mx-auto lg:mx-0 max-w-md">
               Stay Informed,
               <br />
               Stay Inspired
             </h1>
 
-            <p className="text-body-1 text-brown-400 mx-auto lg:mx-0 max-w-md">
+            <p className="text-[0.875rem] sm:text-body-1 font-semibold text-brown-400 mx-auto lg:mx-0 max-w-md">
               Discover a World of Knowledge at Your Fingertips. Your Daily Dose
               of Inspiration and Information.
             </p>
@@ -66,12 +69,12 @@ function HeroSection() {
           </div>
 
           {/* Right Author Bio */}
-          <div className="lg:col-span-1 space-y-2 text-center lg:text-left">
+          <div className="lg:col-span-1 space-y-2 text-left">
             <p className="text-body-2 text-brown-400">- Author</p>
 
             <h2 className="text-headline-3 text-brown-600">Phapaiphat S.</h2>
 
-            <div className="space-y-3 text-body-1 text-brown-400 mx-auto lg:mx-0 max-w-md">
+            <div className="space-y-3 text-[0.875rem] sm:text-body-1 font-semibold text-brown-400 mx-auto lg:mx-0 max-w-md">
               <p>
                 I am a pet enthusiast and freelance writer who specializes in
                 animal behavior and care. With a deep love for cats, I enjoy

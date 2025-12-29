@@ -31,18 +31,32 @@
   --color-brand-red: #cf201d;
 }
 
+@layer base {
+  body {
+    font-family: var(--font-family-sans);
+  }
+}
+
 /* Typography Utility Classes */
 @layer utilities {
+  .logo {
+    font-size: 1.5rem;      /* ~28px */
+    font-weight: 500;
+    letter-spacing: -0.02em; /* ทำให้ดูเป็น mark */
+  }
+  
   .text-headline-1 {
     font-size: var(--font-size-headline-1);
     font-weight: var(--font-weight-headline);
-    line-height: 60px;
+    line-height: 1.15;
     letter-spacing: 0;
   }
 
   .text-headline-2 {
     font-size: var(--font-size-headline-2);
     font-weight: var(--font-weight-headline);
+    line-height: 1.2;
+    letter-spacing: 0;
   }
 
   .text-headline-3 {
