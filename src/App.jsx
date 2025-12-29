@@ -1,78 +1,91 @@
+import profile1 from "./assets/profile1.jpg";
+
 function App() {
   return (
-    <div className="min-h-screen bg-brown-100 p-8">
-      <div className="max-w-4xl mx-auto space-y-8">
-        {/* Typography Scale Demo */}
-        <div className="space-y-4">
-          <h1 className="text-headline-1 text-brown-600">Headline 1</h1>
-          <h2 className="text-headline-2 text-brown-600">Headline 2</h2>
-          <h3 className="text-headline-3 text-brown-600">Headline 3</h3>
-          <h4 className="text-headline-4 text-brown-600">Headline 4</h4>
-          <p className="text-body-1 text-brown-500">
-            Body 1 - This is body text with medium weight (500). Lorem ipsum
-            dolor sit amet, consectetur adipiscing elit.
-          </p>
-          <p className="text-body-2 text-brown-500">
-            Body 2 - This is also body text with the same size and weight. Sed
-            do eiusmod tempor incididunt ut labore.
-          </p>
-          <p className="text-body-3 text-brown-500">
-            Body 3 - This is also body text with the same size and weight. Sed
-            do eiusmod tempor incididunt ut labore.
-          </p>
+    <div className="min-h-screen bg-brown-100">
+      <NavBar />
+      <HeroSection />
+    </div>
+  );
+}
+
+function NavBar() {
+  return (
+    <nav className="w-full bg-brown-100">
+      <div className="max-w-7xl mx-auto px-8 py-6 flex items-center justify-between">
+        {/* Logo */}
+        <div className="text-headline-2 text-brown-600 font-semibold">hh.</div>
+
+        {/* Desktop View */}
+        <div className="hidden lg:flex items-center gap-2">
+          <button className="px-8 py-2 bg-white border border-brown-600 rounded-full text-body-1 text-brown-600">
+            Log in
+          </button>
+          <button className="px-8 py-2 bg-brown-600 rounded-full text-body-1 text-white">
+            Sign up
+          </button>
         </div>
 
-        {/* Color Demo */}
-        <div className="space-y-4 pt-8 border-t border-brown-300">
-          <h2 className="text-headline-3 text-brown-600">Color Palette</h2>
-          <div className="space-y-4">
-            <div>
-              <h3 className="text-headline-4 text-brown-600 mb-2">Base</h3>
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-                <div className="bg-brown-600 p-4 rounded text-white text-body-1">
-                  Brown 600
-                </div>
-                <div className="bg-brown-500 p-4 rounded text-white text-body-1">
-                  Brown 500
-                </div>
-                <div className="bg-brown-400 p-4 rounded text-white text-body-1">
-                  Brown 400
-                </div>
-                <div className="bg-brown-300 p-4 rounded text-brown-600 text-body-1">
-                  Brown 300
-                </div>
-                <div className="bg-brown-200 p-4 rounded text-brown-600 text-body-1">
-                  Brown 200
-                </div>
-                <div className="bg-brown-100 p-4 rounded text-brown-600 text-body-1">
-                  Brown 100
-                </div>
-                <div className="bg-white p-4 rounded border border-brown-300 text-brown-600 text-body-1">
-                  White
-                </div>
-              </div>
+        {/* Mobile View */}
+        <div className="lg:hidden text-brown-600 text-2xl cursor-pointer">
+          ☰
+        </div>
+      </div>
+    </nav>
+  );
+}
+
+function HeroSection() {
+  return (
+    <section className="w-full bg-brown-100">
+      <div className="max-w-7xl mx-auto px-8 py-12">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-center">
+          {/* Left Content */}
+          <div className="lg:col-span-1 space-y-6 text-center lg:text-right">
+            <h1 className="text-headline-1 text-brown-600 leading-tight mx-auto lg:mx-0 max-w-md">
+              Stay Informed,
+              <br />
+              Stay Inspired
+            </h1>
+
+            <p className="text-body-1 text-brown-400 mx-auto lg:mx-0 max-w-md">
+              Discover a World of Knowledge at Your Fingertips. Your Daily Dose
+              of Inspiration and Information.
+            </p>
+          </div>
+
+          {/* Center Image */}
+          <div className="lg:col-span-1 flex justify-center">
+            <div className="w-full max-w-[386px] aspect-[0.73] lg:w-[386px] lg:h-[529px] rounded-2xl overflow-hidden">
+              <img
+                src={profile1}
+                alt="Profile"
+                className="w-full h-full object-cover"
+              />
             </div>
-            <div>
-              <h3 className="text-headline-4 text-brown-600 mb-2">Brand</h3>
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-                <div className="bg-brand-orange p-4 rounded text-white text-body-1">
-                  Brand Orange
-                </div>
-                <div className="bg-brand-green p-4 rounded text-white text-body-1">
-                  Brand Green
-                </div>
-                <div className="bg-brand-green-soft p-4 rounded text-brown-600 text-body-1">
-                  Brand Green Soft
-                </div>
-                <div className="bg-brand-red p-4 rounded text-white text-body-1">
-                  Brand Red
-                </div>
-              </div>
+          </div>
+
+          {/* Right Author Bio */}
+          <div className="lg:col-span-1 space-y-2 text-center lg:text-left">
+            <p className="text-body-2 text-brown-400">- Author</p>
+
+            <h2 className="text-headline-3 text-brown-600">Phapaiphat S.</h2>
+
+            <div className="space-y-3 text-body-1 text-brown-400 mx-auto lg:mx-0 max-w-md">
+              <p>
+                I am a pet enthusiast and freelance writer who specializes in
+                animal behavior and care. With a deep love for cats, I enjoy
+                sharing insights on feline companionship and wellness.
+              </p>
+              <p>
+                When I'm not writing, I spend time volunteering at my local
+                animal shelter, helping cats find loving homes.
+              </p>
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 
