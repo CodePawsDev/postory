@@ -13,7 +13,7 @@ export function NavBar() {
           <button className="px-8 py-2 bg-white border border-brown-600 rounded-full text-body-1 text-brown-600">
             Log in
           </button>
-          <button className="px-8 py-2 bg-brown-600 rounded-full text-body-1 text-white">
+          <button className="px-8 py-2 bg-brand-orange rounded-full text-body-1 text-white">
             Sign up
           </button>
         </div>

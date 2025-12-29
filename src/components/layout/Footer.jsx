@@ -8,11 +8,11 @@ export function Footer() {
           
           {/* Get in touch */}
           <div className="order-1 flex items-center gap-4 text-brown-500">
-            <span className="text-body-1">Get in touch</span>
+            <span className="text-body-1 text-brand-orange">Get in touch</span>
 
             <div className="flex items-center gap-3">
               <a
-                href="https://linkedin.com/in/your-profile"
+                href="https://linkedin.com/in/r-sripen/"
                 aria-label="LinkedIn"
                 className="hover:text-brown-600 transition-colors"
               >
@@ -20,7 +20,7 @@ export function Footer() {
               </a>
 
               <a
-                href="https://github.com/your-username"
+                href="https://github.com/CodePawsDev"
                 aria-label="GitHub"
                 className="hover:text-brown-600 transition-colors"
               >
@@ -28,8 +28,8 @@ export function Footer() {
               </a>
 
               <a
-                href="mailto:your@email.com"
-                aria-label="Email"
+                href="mailto:isripen@gmail.com"
+                aria-label="Gmail"
                 className="hover:text-brown-600 transition-colors"
               >
                 <FaGoogle size={16} />
