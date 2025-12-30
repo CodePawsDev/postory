@@ -1,6 +1,10 @@
-import { FaSearch } from "lucide-react";
+import {FaSearch} from "react-icons/fa";
 
-export function SearchInput({ rounded = false }) {
+export function SearchInput({
+  value,
+  onChange,
+  rounded = false,
+}) {
   return (
     <div
       className={`
@@ -14,6 +18,8 @@ export function SearchInput({ rounded = false }) {
       <input
         type="text"
         placeholder="Search"
+        value={value}
+        onChange={(e) => onChange(e.target.value)}
         className="
           w-full py-2 pr-10
           text-body-2
