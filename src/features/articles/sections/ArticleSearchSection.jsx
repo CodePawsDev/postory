@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { FaSearch } from "react-icons/fa";
-import { CategoryTabs } from "@/components/articles/ui/CategoryTabs";
-import { CategorySelect } from "@/components/articles/ui/CategorySelect";
+import { CategoryTabs } from "../ui/CategoryTabs";
+import { CategorySelect } from "../ui/CategorySelect";
 
 const categories = ["Highlight", "Cat", "Inspiration", "General"];
 

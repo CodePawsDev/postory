@@ -1,4 +1,4 @@
-import profile1 from "@/assets/profile1.jpg";
+import profile1 from "../../../assets/profile1.jpg";
 
 function HeroSection() {
   return (
